@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go_project/topics/fnc"
+)
 
 func main() {
 	var a [10]int
@@ -33,5 +36,17 @@ func main() {
 		fmt.Println(item, index)
 	}
 
-	// fmt.Println(dp)
+	var s = fnc.Closure()
+
+	fmt.Println(s())
+	fmt.Println(s())
+	fmt.Println(s())
+
+	var p = fnc.Closure()
+
+	fmt.Println(p())
+	fmt.Println(p())
+	fmt.Println(p())
+	fmt.Println(p())
+	fmt.Println(p())
 }
