@@ -23,5 +23,11 @@ func main() {
 	dp[0][1] = 2
 	dp[4][4] = 3
 
+	s := b[2:5]
+	f := d[3:]
+
+	defer fmt.Println(s)
+	defer fmt.Println(f)
+
 	fmt.Println(dp)
 }
