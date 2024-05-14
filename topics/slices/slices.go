@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_project/topics/fnc"
+	"go_project/topics/pointers"
 )
 
 func main() {
@@ -42,11 +43,13 @@ func main() {
 	fmt.Println(s())
 	fmt.Println(s())
 
-	var p = fnc.Closure()
+	i := 0
 
-	fmt.Println(p())
-	fmt.Println(p())
-	fmt.Println(p())
-	fmt.Println(p())
-	fmt.Println(p())
+	// i should have value - 0
+	fmt.Println(i)
+
+	pointers.ChangeValue(&i)
+
+	// i should be 1
+	fmt.Println(i)
 }
